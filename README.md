@@ -20,52 +20,54 @@ Loose clone of the MUI Kitchen Sink Demo but using Tailwind CSS.
 - Formik
 - Vite aliases
 
+Note that this project uses `pnpm`.
+
 ## Scripts
 
 Start the app in dev mode:
 
 ```
-npm run dev
+pnpm dev
 ```
 
 Start the test runner:
 
 ```
-npm test
+pnpm test
 ```
 
 Run all tests and generate a coverage report:
 
 ```
-npm run test:coverage
+pnpm test:coverage
 ```
 
 Start Storybook:
 
 ```
-npm run storybook
+pnpm storybook
 ```
 
 Lint the code:
 
 ```
-npm run lint
+pnpm lint
 ```
 
 Check the code formatting:
 
 ```
-npm run format:check
+pnpm format:check
 ```
 
 Format the code using `prettier`:
 
 ```
-npm run format
+pnpm format
 ```
 
 Extract embedded English strings ready for translation:
 
 ```
-npm run intl:extract
+pnpm intl:extract
 ```

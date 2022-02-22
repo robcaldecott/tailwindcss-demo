@@ -1,4 +1,3 @@
-import { ReactNode, useEffect } from "react";
 import { DecoratorFn } from "@storybook/react";
 import { IntlProvider } from "react-intl";
 import { QueryClient, QueryClientProvider, setLogger } from "react-query";

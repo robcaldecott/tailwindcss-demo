@@ -1,7 +1,6 @@
 import { ComponentPropsWithoutRef, ElementType, ReactNode } from "react";
 import clsx from "clsx";
 import { Typography } from "../Typography";
-import type { TypographyProps } from "../Typography";
 
 interface ListProps {
   dividers?: boolean;
@@ -69,34 +68,3 @@ export const ListItemText = ({
     </Typography>
   </div>
 );
-
-// interface ListItemTextProps<
-//   PrimaryComponent extends ElementType = "span",
-//   SecondaryComponent extends ElementType = "p"
-// > extends Omit<ComponentPropsWithoutRef<"div">, "children"> {
-//   primary: ReactNode;
-//   primaryTypographyProps?: TypographyProps<PrimaryComponent>;
-//   secondary: ReactNode;
-//   secondaryTypographyProps?: TypographyProps<SecondaryComponent>;
-// }
-
-// export const ListItemText = <
-//   PrimaryComponent extends ElementType = "span",
-//   SecondaryComponent extends ElementType = "p"
-// >({
-//   className,
-//   primary,
-//   primaryTypographyProps,
-//   secondary,
-//   secondaryTypographyProps,
-//   ...other
-// }: ListItemTextProps<PrimaryComponent, SecondaryComponent>) => (
-//   <div className={clsx("my-[6px] flex-auto min-w-0", className)} {...other}>
-//     <Typography component="span" variant="body1" {...primaryTypographyProps}>
-//       {primary}
-//     </Typography>
-//     <Typography component="p" variant="body2" {...secondaryTypographyProps}>
-//       {secondary}
-//     </Typography>
-//   </div>
-// );

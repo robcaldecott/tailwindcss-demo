@@ -45,7 +45,6 @@ Empty.parameters = {
 
 const fillForm = async (canvasElement: HTMLElement) => {
   const canvas = within(canvasElement);
-  const body = within(document.body);
   await userEvent.selectOptions(
     canvas.getByRole("combobox", { name: /make/i }),
     "Audi"
